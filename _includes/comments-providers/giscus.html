@@ -17,8 +17,8 @@
       script.setAttribute('data-mapping', '{{ site.comments.giscus.discussion_term | default: "pathname" }}');
       script.setAttribute('data-reactions-enabled', '{{ site.comments.giscus.reactions_enabled | default: 1 }}');
       script.setAttribute('data-theme', '{{ site.comments.giscus.theme | default: "light" }}');
-      script.setAttribute('crossorigin', 'anonymous');
       script.setAttribute('data-lang', '{{ site.comments.giscus.lang }}');
+      script.setAttribute('crossorigin', 'anonymous');
   
       commentContainer.appendChild(script);
     })();
