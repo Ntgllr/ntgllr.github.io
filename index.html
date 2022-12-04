@@ -1,7 +1,43 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+title: "Gesundheitsteilchen.de"
 layout: home
-author_profile: true
+permalink: /
+date: 2022-12-01
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/banner/Bäckerei-miti-unsplash.jpg
+  caption: "Quelle: [**Unsplash**](https://unsplash.com/@mitifotos)"
+  actions:
+    - label: "Über mich"
+      url: "/about/"
+excerpt: "Geschichten und Projekte aus Gesundheitswissenschaften und Gesundheitspolitik."
+intro: 
+  - excerpt: 'Herzlich Willkommen bei den "Gesundheitsteilchen". Hier soll es um Themen des Gesundheitswesens und der Gesundheitswissenschaften gehen.'
+feature_row:
+  - image_path: /assets/images/papal-bull-doctrine-of-discovery-500x300.jpg
+    alt: "Papal Bulls."
+    title: "Papal Bulls"
+    excerpt: "Papal Bulls created the foundation for the Doctrine of Discovery."
+    url: "/papal-bulls/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/book-1659717_500x600.jpg
+    alt: "Law"
+    title: "Law"
+    excerpt: "The Doctrine of Discovery in United States and International legal codes."
+    url: "/law/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/Doctrine-of-discovery-Standing-Rock-1-500x600.jpg
+    alt: "Repudiations"
+    title: "Repudiations"
+    excerpt: "Repuidations of the Doctrine of Discovery by religious organizations and faith communities"
+    url: "/faith-communities/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
 ---
+
+{% include feature_row id="intro" type="center" %}
+
+<!-- {% include feature_row %} -->

@@ -13,16 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Gesundheitsteilchen.de
+email: dennis.grothe@uni-bielefeld.de
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+  Geschichten und Projekte rund um das Gesundheitswesen, Public Health und Academia.
+twitter_username: freizeitpfleger
+github_username: ntgllr
+minimal_mistakes_skin:
 search: true
+locale: "de-DE"
 
 # Build settings
 markdown: kramdown
@@ -31,7 +30,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: DE # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -39,7 +38,8 @@ include:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
+exclude:
+  - _post_templates
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules
@@ -58,34 +58,31 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Dennis Grothe"
+  avatar : "/assets/images/Dennis_AG5.jpg"
+  bio    : "Ehemaliger Gesundheits- und Krankenpfleger. Studiert Health Communication an der Uni Bielefeld."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-inverse fa-mastodon" 
+      url: "https://medibubble.org/@freizeitpfleger"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/dennis-grothe"
+    - label: "Mail"
+      icon: "far fa-fw fa-envelope"
+      url: "mailto:dennis.grothe@uni-bielefeld.de"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-inverse fa-mastodon" 
+      url: "https://medibubble.org/@freizeitpfleger"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/dennis-grothe"
+    - label: "Mail"
+      icon: "far fa-fw fa-envelope"
+      url: "mailto:dennis.grothe@uni-bielefeld.de"
 
 defaults:
   # _posts
@@ -94,7 +91,7 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
       share: true
@@ -105,7 +102,7 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+    #  author_profile: true
 
 category_archive:
   type: liquid
@@ -113,3 +110,16 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# Comments
+repository: ntgllr/ntgllr.github.io
+
+comments:
+  provider: "giscus"
+  giscus:
+    repo_id              : "R_kgDOIjKq2A" # Shown during giscus setup at https://giscus.app
+    category_name        : "General" # Full text name of the category
+    category_id          : "DIC_kwDOIjKq2M4CS54D" # Shown during giscus setup at https://giscus.app
+    discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : 1 # '1' for enabled (default), '0' for disabled
+    theme                : "light" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
