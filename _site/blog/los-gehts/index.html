@@ -23,14 +23,14 @@
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Gesundheitsteilchen.de">
 <meta property="og:title" content="Los gehts!">
-<meta property="og:url" content="http://localhost:4000/blog/los-gehts/">
+<meta property="og:url" content="/blog/los-gehts/">
 
 
   <meta property="og:description" content="Herzlich Willkommen bei den Gesundheitsteilchen. Kommt herein, seht euch um und sucht euch was aus.">
 
 
 
-  <meta property="og:image" content="http://localhost:4000/assets/images/banner/B%C3%A4ckerei-Banner.jpg">
+  <meta property="og:image" content="/assets/images/banner/B%C3%A4ckerei-Banner.jpg">
 
 
 
@@ -43,7 +43,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/blog/los-gehts/">
+<link rel="canonical" href="/blog/los-gehts/">
 
 
 
@@ -54,7 +54,7 @@
     
       "@type": "Person",
       "name": null,
-      "url": "http://localhost:4000/"
+      "url": "/"
     
   }
 </script>
@@ -182,7 +182,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/blog/los-gehts/" class="u-url" itemprop="url">Los gehts!
+            <a href="/blog/los-gehts/" class="u-url" itemprop="url">Los gehts!
 </a>
           </h1>
           
@@ -258,11 +258,11 @@
       <h4 class="page__share-title">Teilen auf</h4>
     
   
-    <a href="https://twitter.com/intent/tweet?text=Los+gehts%21%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2Flos-gehts%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Teilen auf Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+    <a href="https://twitter.com/intent/tweet?text=Los+gehts%21%20%2Fblog%2Flos-gehts%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Teilen auf Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
   
-    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Flos-gehts%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Teilen auf Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=%2Fblog%2Flos-gehts%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Teilen auf Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
   
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fblog%2Flos-gehts%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Teilen auf LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=%2Fblog%2Flos-gehts%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Teilen auf LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
   </section>
 
       
@@ -351,29 +351,30 @@
 
 
     <script>
-  'use strict';
-
-  (function () {
-    var commentContainer = document.querySelector('#giscus-comments');
-
-    if (!commentContainer) {
-      return;
-    }
-
-    var script = document.createElement('script');
-    script.setAttribute('src', 'https://giscus.app/client.js');
-    script.setAttribute('data-repo', 'ntgllr/ntgllr.github.io');
-    script.setAttribute('data-repo-id', 'R_kgDOIjKq2A');
-    script.setAttribute('data-category', 'General');
-    script.setAttribute('data-category-id', 'DIC_kwDOIjKq2M4CS54D');
-    script.setAttribute('data-mapping', 'pathname');
-    script.setAttribute('data-reactions-enabled', '1');
-    script.setAttribute('data-theme', 'light');
-    script.setAttribute('crossorigin', 'anonymous');
-
-    commentContainer.appendChild(script);
-  })();
-</script>
+    'use strict';
+  
+    (function () {
+      var commentContainer = document.querySelector('#giscus-comments');
+  
+      if (!commentContainer) {
+        return;
+      }
+  
+      var script = document.createElement('script');
+      script.setAttribute('src', 'https://giscus.app/client.js');
+      script.setAttribute('data-repo', 'ntgllr/ntgllr.github.io');
+      script.setAttribute('data-repo-id', 'R_kgDOIjKq2A');
+      script.setAttribute('data-category', 'General');
+      script.setAttribute('data-category-id', 'DIC_kwDOIjKq2M4CS54D');
+      script.setAttribute('data-mapping', 'pathname');
+      script.setAttribute('data-reactions-enabled', '1');
+      script.setAttribute('data-theme', 'light');
+      script.setAttribute('crossorigin', 'anonymous');
+      script.setAttribute('data-lang', 'de');
+  
+      commentContainer.appendChild(script);
+    })();
+  </script>
   
 
 
